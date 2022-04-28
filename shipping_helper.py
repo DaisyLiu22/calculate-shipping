@@ -7,9 +7,9 @@ def calculate_shipping(quantity):
     count = 0
     if total_weight < 15:
         if total_weight < 3:
-            total_cost = 4000
+            total_cost = 3000
         elif total_weight >= 3 and total_weight < 5:
-            total_cost = 4500
+            total_cost = 4000
         elif total_weight >= 5 and total_weight < 7:
             total_cost = 5000
         elif total_weight >= 7 and total_weight < 10:
@@ -20,9 +20,9 @@ def calculate_shipping(quantity):
         count = int(total_weight / 15)
         extra_weight = total_weight - count*15
         if extra_weight < 3:
-            extra_cost = 4000
+            extra_cost = 3000
         elif extra_weight >= 3 and extra_weight < 5:
-            extra_cost = 4500
+            extra_cost = 4000
         elif extra_weight >= 5 and extra_weight < 7:
             extra_cost = 5000
         elif extra_weight >= 7 and extra_weight < 10:
@@ -35,7 +35,7 @@ def calculate_shipping(quantity):
 
 def total_amount(quantity):
     quantity = int(quantity)
-    price = 25000
+    price = 23000
     total_deposit = calculate_shipping(quantity) + quantity * price
     return total_deposit
         
