@@ -15,7 +15,7 @@ def calculate_shipping(quantity):
         elif total_weight >= 7 and total_weight < 10:
             total_cost = 6000
         else:
-            total_cost = count*7000
+            total_cost = 7000
     else:
         count = int(total_weight / 15)
         extra_weight = total_weight - count*15
