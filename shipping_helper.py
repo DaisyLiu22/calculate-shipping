@@ -2,7 +2,7 @@ def calculate_shipping(quantity):
     """Calculate the total weight of the package,
     and returns the shipping fee"""
     quantity = int(quantity)
-    weight = 0.8
+    weight = 0.5
     total_weight = float(quantity * weight)
     count = 0
     if total_weight < 15:
