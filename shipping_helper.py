@@ -29,7 +29,7 @@ def main():
     """
     You can test all the functions here
     """
-    calculate_shipping(20)
+    # calculate_shipping(20)
 
 
 if __name__ == '__main__':
