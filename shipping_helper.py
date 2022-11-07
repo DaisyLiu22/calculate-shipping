@@ -3,15 +3,19 @@ def calculate_shipping(quantity):
     and returns the shipping fee"""
     quantity = int(quantity)
     count = 0
-    if quantity <= 4:
-        if quantity <= 2:
+    if quantity <= 4: 
+        if quantity = 0:
+            total_cost = 0   
+        elif quantity > 0 and quantity <= 2:
             total_cost = 4000
         else:
             total_cost = 6000
     else:
         count = int(quantity / 4)
         extra_sets = quantity - count*4
-        if extra_sets <= 2:
+        if extra_sets = 0:
+            extra_cost = 0
+        elif extra_sets > 0 and extra_sets <= 2:
             extra_cost = 4000
         else:
             extra_cost = 6000
